@@ -68,3 +68,6 @@ def test():
     )
     resp = broker.fetch_balance()
     pprint.pprint(resp)
+
+def articles(request):
+    return render(request, 'dashboard/articles.html')
